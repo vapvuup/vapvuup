@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vap Vuup: inclusão digital, suporte tecnológico e aulas simples para idosos e pessoas que precisam de ajuda com tecnologia.">
+    <title>Vap Vuup</title>
+
+    <link rel="icon" type="image/png" href="assets/img/inclusao_conecta_separado.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-75 border-bottom shadow-sm">
+        <div class="container fs-3">
+            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2 text-decoration-none"
+                href="index.html" aria-label="Página inicial Vap Vuup">
+                <img class="brand-logo" src="assets/img/inclusao_conecta_separado.png" alt="Logo Vap Vuup">
+                <span class="brand-text fs-3">
+                    Vap Vuup
+                </span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 ">
+                    <li class="nav-item"><a class="nav-link active rounded-pill px-3 py-2 fw-semibold"
+                            href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/planos.html">Doações</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/formulario.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/login.html">Login</a></li>
+
+
+
+                    <li class="nav-item menu_letra">
+                        <button class="btn btn-outline-secondary btn-sm" id="aumentar">A+</button>
+                        <button class="btn btn-outline-secondary btn-sm" id="diminuir">A-</button>
+                        <button class="btn btn-outline-primary btn-sm" id="resetar">A</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="eyebrow">Tecnologia sem complicação</span>
+                        <h1 class="hero-title">Facilidade digital para <span>meia idade e idosos</span>.</h1>
+                        <p class="hero-subtitle">
+                            A Vap Vuup ajuda pessoas a usarem celular, computador, aplicativos e serviços digitais com
+                            paciência, linguagem simples e acompanhamento humano.
+                        </p>
+
+                        <!-- <div class="hero-actions">
+                            <a href="pages/formulario.html" class="btn btn-primary btn-lg">Quero ajuda agora</a>
+                            <a href="pages/sobre.html" class="btn btn-light-green btn-lg">Conhecer o projeto</a>
+                        </div> -->
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="hero-visual" aria-hidden="true">
+                            <div class="hero-blob"></div>
+                            <img class="hero-mascot" src="assets/img/inclusao_conecta_separado.png"
+                                alt="Mascote Vap Vuup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="servicos">
+            <div class="container">
+                <h2 class="section-title">Nossos serviços</h2>
+                <p class="section-subtitle">
+                    A ideia é simples, coisa rara nesse planeta: pegar tecnologia confusa e transformar em algo usável
+                    para quem precisa viver melhor no digital.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="service-card card v-card h-100 border-0 p-4">
+                            <span class="icon-box">📱</span>
+                            <h3>Celular e aplicativos</h3>
+                            <p>Ajuda para usar WhatsApp, chamadas de vídeo, fotos, mapas, redes sociais e configurações
+                                básicas.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="service-card card v-card h-100 border-0 p-4">
+                            <span class="icon-box">💻</span>
+                            <h3>Computador e notebook</h3>
+                            <p>Organização de arquivos, e-mail, internet, impressora, antivírus e resolução de problemas
+                                comuns.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="service-card card v-card h-100 border-0 p-4">
+                            <span class="icon-box">♿</span>
+                            <h3>Acessibilidade</h3>
+                            <p>Ajuste de letras maiores, contraste, leitura de tela, comandos por voz e recursos de
+                                autonomia digital.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="service-card card v-card h-100 border-0 p-4">
+                            <span class="icon-box">🛡️</span>
+                            <h3>Segurança digital</h3>
+                            <p>Orientação contra golpes, links suspeitos, senhas fracas e armadilhas digitais que
+                                ninguém merece.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Por que escolher a Vap Vuup?</h2>
+                <p class="section-subtitle">
+                    Porque ninguém deveria depender de sorte, neto disponível ou tutorial duvidoso no YouTube para
+                    resolver algo básico no celular.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="beneficio-card card v-card h-100 border-0 p-4 text-center">
+                            <span class="icon-box mx-auto">💚</span>
+                            <h4>Atendimento humanizado</h4>
+                            <p>Suporte paciente, respeitoso e adaptado ao ritmo de cada pessoa.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="beneficio-card card v-card h-100 border-0 p-4 text-center">
+                            <span class="icon-box mx-auto">🏠</span>
+                            <h4>Remoto ou presencial</h4>
+                            <p>Ajuda online para agilidade e visitas presenciais quando necessário.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="beneficio-card card v-card h-100 border-0 p-4 text-center">
+                            <span class="icon-box mx-auto">🔎</span>
+                            <h4>Explicação prática</h4>
+                            <p>Sem enrolação técnica. A pessoa aprende fazendo, não decorando teoria inútil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-6 d-flex align-items-center gap-3">
+                    <img class="footer-logo" src="assets/img/vap_vuup_final_4.png" alt="Logo Vap Vuup">
+                    <p>© 2026 Vap Vuup - Inclusão digital com humanidade.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a class="text-white-50 text-decoration-none" href="pages/formulario.html">Contato</a>
+                    <span class="mx-2 text-white-50">•</span>
+                    <a class="text-white-50 text-decoration-none" href="pages/sobre.html">Sobre</a>
+                    <span class="mx-2 text-white-50">•</span>
+                    <a class="text-white-50 text-decoration-none" href="pages/planos.html">Doações</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <a class="whatsapp-btn"
+        href=" https://wa.me//5511961194875?text=Tenho%20interesse%20em%20participar%20do%20projeto%20Olá%20Barbará"
+        aria-label="Chamar no WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+    <script src="https://kit.fontawesome.com/775fd40529.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const TAMANHO_PADRAO = 16;
+
+        let tamanho = parseInt(
+            localStorage.getItem('fonte') || TAMANHO_PADRAO
+        );
+
+        aplicarFonte();
+
+        document.getElementById('aumentar').onclick = () => {
+            tamanho += 2;
+            aplicarFonte();
+        };
+
+        document.getElementById('diminuir').onclick = () => {
+            tamanho -= 2;
+            aplicarFonte();
+        };
+
+        document.getElementById('resetar').onclick = () => {
+            tamanho = TAMANHO_PADRAO;
+            aplicarFonte();
+        };
+
+        function aplicarFonte() {
+            tamanho = Math.max(12, Math.min(32, tamanho)); // Limites
+            document.documentElement.style.fontSize = tamanho + 'px';
+            localStorage.setItem('fonte', tamanho);
+        }
+    </script>
+
+
+</body>
+
+</html>

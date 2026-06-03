@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça uma doação para apoiar a inclusão digital de idosos com a Vap Vuup.">
+    <title>Doações | Vap Vuup</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/vap_vuup_final_4.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-75 border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2 text-decoration-none" href="../index.html" aria-label="Página inicial Vap Vuup">
+                <img class="brand-logo" src="../assets/img/vap_vuup_final_4.png" alt="Logo Vap Vuup">
+                <span class="brand-text">
+                    Vap Vuup
+
+                </span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill px-3 py-2 fw-semibold" href="planos.html">Doações</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="formulario.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-card card border-0 p-4 p-md-5">
+                    <span class="eyebrow">Apoie essa causa</span>
+                    <h1 class="page-title">Sua doação vira autonomia digital.</h1>
+                    <p class="page-description">
+                        Cada contribuição ajuda a levar orientação, suporte e materiais simples para pessoas que querem
+                        usar tecnologia com mais segurança e independência.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="planos">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-12">
+                        <div class="card-plano card v-card h-100 border-0 p-4 p-md-5">
+                            <span class="eyebrow">doação</span>
+                            <h2 class="mb-3 fw-black"
+                                style="font-weight:950; color:var(--vv-blue); letter-spacing:-.04em;">Escolha como
+                                contribuir</h2>
+
+
+                            <p>Quer ajudar nossa causa? Entre em contato conosco pelo WhatsApp ou e-mail para realizar
+                                sua doação.</p>
+
+                            <p>Também é possível contribuir via Pix e outras formas de doação. Fale com nossa equipe
+                                para receber as informações e escolher a melhor forma de apoiar a ONG.</p>
+
+                            <p></p>Toda ajuda faz a diferença e contribui diretamente para continuarmos nosso trabalho.
+                            </p>
+
+                            <!-- <p class="mb-4">Digite um valor ou selecione uma sugestão. Sem teatro corporativo: o objetivo é financiar atendimento, materiais e ações de inclusão.</p> -->
+
+                            <!-- <div class="donation-panel">
+                                <div class="mb-4">
+                                    <label for="valorDoacao" class="form-label fw-bold">Valor da doação</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="number" class="form-control" id="valorDoacao" placeholder="Digite o valor" min="1" step="0.01" oninput="atualizarResumo()">
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Sugestões rápidas</label>
+                                    <div class="d-grid gap-2 d-sm-flex flex-wrap">
+                                        <button type="button" class="btn btn-outline-primary" onclick="setarValor(25, this)">R$ 25</button>
+                                        <button type="button" class="btn btn-outline-primary" onclick="setarValor(50, this)">R$ 50</button>
+                                        <button type="button" class="btn btn-outline-primary" onclick="setarValor(100, this)">R$ 100</button>
+                                        <button type="button" class="btn btn-outline-primary" onclick="setarValor(250, this)">R$ 250</button>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nomeDoador" class="form-label fw-bold">Nome</label>
+                                        <input type="text" class="form-control" id="nomeDoador" placeholder="Opcional">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="emailDoador" class="form-label fw-bold">E-mail</label>
+                                        <input type="email" class="form-control" id="emailDoador" placeholder="Opcional">
+                                    </div>
+                                </div>
+
+                                <div class="donation-total">
+                                    <div>
+                                        <span>Valor selecionado</span>
+                                        <strong id="valorResumo">R$ 0,00</strong>
+                                    </div>
+                                    <span>Doação segura e registrada</span>
+                                </div>
+
+                                <a href="formulario.html" class="btn btn-primary btn-lg w-100">Continuar doação</a>
+                                <p class="text-center mt-3 mb-0 small">Você será direcionado para contato e confirmação. Sim, ainda falta gateway real, porque site estático não faz milagre financeiro.</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-5">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="impact-card">
+                                    <strong>📚</strong>
+                                    <h5>Materiais educativos</h5>
+                                    <p>Guias simples para uso de celular, aplicativos e segurança digital.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="impact-card">
+                                    <strong>🤝</strong>
+                                    <h5>Atendimentos sociais</h5>
+                                    <p>Suporte para pessoas com dificuldade de acesso ou baixo domínio tecnológico.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="impact-card">
+                                    <strong>♿</strong>
+                                    <h5>Acessibilidade</h5>
+                                    <p>Configuração de recursos que tornam dispositivos mais fáceis de usar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="row g-4 mt-5">
+                    <div class="col-md-4">
+                        <div class="step-card card v-card h-100 border-0 p-4 text-center">
+                            <span class="icon-box mx-auto">1</span>
+                            <h4>Você contribui</h4>
+                            <p>Escolhe um valor e entra em contato para confirmar a doação.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step-card card v-card h-100 border-0 p-4 text-center">
+                            <span class="icon-box mx-auto">2</span>
+                            <h4>A ação acontece</h4>
+                            <p>O valor apoia treinamentos, suporte e materiais de inclusão digital.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step-card card v-card h-100 border-0 p-4 text-center">
+                            <span class="icon-box mx-auto">3</span>
+                            <h4>O impacto cresce</h4>
+                            <p>Mais pessoas aprendem a navegar com segurança e independência.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+
+
+
+    </main>
+
+    <footer class="footer bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-6 d-flex align-items-center gap-3">
+                    <img class="footer-logo" src="../assets/img/vap_vuup_final_4.png" alt="Logo Vap Vuup">
+                    <p>© 2026 Vap Vuup - Inclusão digital com humanidade.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a class="text-white-50 text-decoration-none" href="../index.html">Início</a>
+                    <span class="mx-2 text-white-50">•</span>
+                    <a class="text-white-50 text-decoration-none" href="sobre.html">Sobre</a>
+                    <span class="mx-2 text-white-50">•</span>
+                    <a class="text-white-50 text-decoration-none" href="formulario.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a class="whatsapp-btn"
+        href=" https://wa.me//5511961194875?text=Tenho%20interesse%20em%20participar%20do%20projeto%20Olá%20Barbará"
+        aria-label="Chamar no WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+    <script src="https://kit.fontawesome.com/775fd40529.js" crossorigin="anonymous"></script>
+
+    <script>
+        function formatarMoeda(valor) {
+            return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+
+        function atualizarResumo() {
+            const campo = document.getElementById('valorDoacao');
+            const resumo = document.getElementById('valorResumo');
+            const valor = Number(campo.value || 0);
+            resumo.textContent = formatarMoeda(valor);
+        }
+
+        function setarValor(valor, botao) {
+            document.getElementById('valorDoacao').value = valor;
+            document.querySelectorAll('.btn-outline-primary').forEach(btn => btn.classList.remove('is-selected'));
+            botao.classList.add('is-selected');
+            atualizarResumo();
+        }
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

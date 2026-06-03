@@ -1,0 +1,21 @@
+LAYOUT MELHORADO - VAP VUUP
+
+Arquivos principais alterados:
+- index.html
+- pages/sobre.html
+- pages/planos.html
+- pages/formulario.html
+- css/style.css
+
+Principais melhorias:
+- Layout mais moderno e responsivo.
+- Identidade visual com branco, verde claro e verde escuro.
+- Navbar com logo, texto da marca e estado ativo.
+- Footer deixou de ser fixo para não cobrir conteúdo.
+- Home com hero profissional, cards de serviços, CTA e blocos de impacto.
+- Página Sobre com missão, visão, valores, identidade visual e SWOT.
+- Página Doações com painel visual, botões de valor e resumo em reais.
+- Página Contato com formulário mais completo e seção lateral de atendimento.
+
+Observação:
+O formulário e a doação continuam estáticos. Para envio real, precisa integrar backend, serviço de formulário ou gateway de pagamento.
