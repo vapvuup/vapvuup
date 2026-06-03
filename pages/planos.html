@@ -14,26 +14,39 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-75 border-bottom shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2 text-decoration-none" href="../index.html" aria-label="Página inicial Vap Vuup">
+        <div class="container fs-3">
+            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2 text-decoration-none"
+                href="../index.html" aria-label="Página inicial Vap Vuup">
                 <img class="brand-logo" src="../assets/img/vap_vuup_final_4.png" alt="Logo Vap Vuup">
-                <span class="brand-text">
+                <span class="brand-text fs-3">
                     Vap Vuup
 
                 </span>
             </a>
 
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="../index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link active rounded-pill px-3 py-2 fw-semibold" href="planos.html">Doações</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="formulario.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill px-3 py-2 fw-semibold"
+                            href="planos.html">Doações</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="formulario.html">Contato</a></li>
+
+
+
+                    <li class="nav-item menu_letra">
+                        <button class="btn btn-outline-secondary btn-sm" id="aumentar">A+</button>
+                        <button class="btn btn-outline-secondary btn-sm" id="diminuir">A-</button>
+                        <button class="btn btn-outline-primary btn-sm" id="resetar">A</button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -239,6 +252,7 @@
         }
     </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
