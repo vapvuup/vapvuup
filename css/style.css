@@ -192,6 +192,7 @@ a {
     height: 320px;
     background: rgba(105, 210, 188, .20);
     filter: blur(10px);
+     display: none;
 }
 
 .hero-title {
@@ -490,8 +491,6 @@ textarea.form-control {
 ========================================================= */
 .footer {
     background: #111827 !important;
-    po
-
 }
 
 .footer p {
