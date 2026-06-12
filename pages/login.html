@@ -14,150 +14,97 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-75 border-bottom shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2 text-decoration-none"
-                href="../index.html" aria-label="Página inicial Vap Vuup">
-                <img class="brand-logo" src="../assets/img/vap_vuup_final_4.png" alt="Logo Vap Vuup">
-                <span class="brand-text">
-                    Vap Vuup
-
-                </span>
-            </a>
-
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
-                            href="../index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link active rounded-pill px-3 py-2 fw-semibold"
-                            href="planos.html">Doações</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
-                            href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
-                            href="formulario.html">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
-                            href="login.html">Login</a></li>
-
-                            
-
-                    <li class="nav-item menu_letra">
-                        <button class="btn btn-outline-secondary btn-sm" id="aumentar">A+</button>
-                        <button class="btn btn-outline-secondary btn-sm" id="diminuir">A-</button>
-                        <button class="btn btn-outline-primary btn-sm" id="resetar">A</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main >
 
 
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 text-black">
+    <main>
 
-                        <!-- <div class="px-5 ms-xl-4">
-                            <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
-                            <span class="h1 fw-bold mb-0">Logo</span>
-                        </div> -->
 
-                        <div class="d-flex justify-content-center align-items-center mt-5">
-
-                            <form class="mt-5">
-
-                                <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login</h3>
-
-                                <div class="form-outline mb-4">
-                                    <input type="email" id="login" class="form-control form-control-lg" />
-                                    <label class="form-label" for="login">Usuario</label>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <input type="password" id="senha" class="form-control form-control-lg" />
-                                    <label class="form-label" for="senha">Senha</label>
-                                </div>
-
-                                <div class="pt-1 mb-4">
-                                    <button class="btn btn-info" type="button" onclick="abrir_login()">Login</button>
-                                </div>
-
-                                <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Esqueceu a senha?</a>
-                                </p>
-                                <p>Não tem conta? <a href="#!" class="link-info">Cadastre-se aqui</a></p>
-
-                            </form>
-
-                        </div>
-
+        <section class="">
+            <div class="container-fluid h-custom vh-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                            class="img-fluid" alt="Sample image">
                     </div>
-                    <div class="col-sm-6 px-0 d-none d-sm-block">
-                        <img src="../assets/img/vap_vuup_final_4.png" alt="Login image" class="w-80 vh-80" >
+                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                        <form>
+                            <div
+                                class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-4">
+                                <p class="lead fw-normal mb-0 me-3">Faça login</p>
+                                <!-- <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-primary btn-floating mx-1 mb-3">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button> -->
+
+                                <!-- <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button> -->
+                            </div>
+
+                            <!-- <div class="divider d-flex align-items-center my-4">
+                                <p class="text-center fw-bold mx-3 mb-0">Ou</p>
+                            </div> -->
+
+                            <!-- Email input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Email:</label>
+                                <input type="email" id="login" class="form-control form-control-lg"
+                                    placeholder="Digite seu email" />
+                            </div>
+
+                            <!-- Password input -->
+                            <div data-mdb-input-init class="form-outline mb-3">
+                                <label class="form-label" for="form3Example4">Senha:</label>
+                                <input type="password" id="senha" class="form-control form-control-lg"
+                                    placeholder="Digite a senha" />
+                            </div>
+
+                            <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                            <!-- Checkbox -->
+                            <!-- <div class="form-check mb-0">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                    <label class="form-check-label" for="form2Example3">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <a href="#!" class="text-body">Forgot password?</a>
+                            </div> -->
+
+                            <div class="text-center text-lg-start mt-4 pt-2">
+                                <button type="button" class="btn btn-primary btn-lg"
+                                    onclick="abrir_login()">Entrar</button>
+                                <!-- <p class="small fw-bold mt-2 pt-1 mb-0">Não tem uma conta?  -->
+                                <!-- <a href="#!" class="link-danger">Registre-se</a></p> -->
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
+
         </section>
-
-
-
-
-
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-                <div class="vw-plugin-top-wrapper"></div>
-            </div>
-        </div>
-
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
-        <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
-
-
 
 
     </main>
 
-    <footer class="footer bg-dark text-white py-4 mt-5">
-        <div class="container">
-
-            
-            <div class="row align-items-center g-3">
-                <div class="col-md-6 d-flex align-items-center gap-3">
-                    <img class="footer-logo" src="../assets/img/vap_vuup_final_4.png" alt="Logo Vap Vuup">
-                    <p>© 2026 Vap Vuup - Inclusão digital com humanidade.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a class="text-white-50 text-decoration-none" href="../index.html">Início</a>
-                    <span class="mx-2 text-white-50">•</span>
-                    <a class="text-white-50 text-decoration-none" href="sobre.html">Sobre</a>
-                    <span class="mx-2 text-white-50">•</span>
-                    <a class="text-white-50 text-decoration-none" href="formulario.html">Contato</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
-    <a class="whatsapp-btn"
-        href=" https://wa.me//5511961194875?text=Tenho%20interesse%20em%20participar%20do%20projeto%20Olá%20Barbará"
-        aria-label="Chamar no WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 
     <script src="https://kit.fontawesome.com/775fd40529.js" crossorigin="anonymous"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/dados.js"></script>
+
 
     <script>
-        function abrir_login() {
 
+        function abrir_login() {
             // Captura o elemento input pelo ID
             const meuLogin = document.getElementById('login');
 
@@ -177,7 +124,7 @@
             if (login == 'Daniel' && senha == '123') {
                 window.location.href = "home.html";
             } else {
-           
+
 
                 Swal.fire({
                     title: 'Atenção!',
@@ -189,6 +136,7 @@
             }
         }
     </script>
+
 </body>
 
 </html>

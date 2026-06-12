@@ -9,7 +9,7 @@
 
     <link rel="icon" type="image/png" href="../assets/img/inclusao_conecta_separado.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_home.css">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -77,33 +77,76 @@
             </div>
             <div class="col-sm p-3 min-vh-100">
                 <main class="main-content">
+                    <div class="container">
+                        <section>
 
-                    <section>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationServer01">Atendente</label>
+                                        <input type="text" class="form-control  " id="atendente" value="" required>
+                                        <div class="invalid-feedback">
+                                            Favor preencher o campo Atendente!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationServer02">Atendido</label>
+                                        <input type="text" class="form-control" id="Atendido" value="" required>
+                                        <div class="invalid-feedback">
+                                            Favor preencher o campo Atendido!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationServerUsername">Serviço</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="servico_executado"
+                                                aria-describedby="inputGroupPrepend3" required>
+                                            <div class="invalid-feedback">
+                                                Favor preencher o campo Serviço!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer03">Duração</label>
+                                        <input type="text" class="form-control " id="Duracao" required>
+                                        <div class="invalid-feedback">
+                                            Favor preencher o campo Duração!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationServer04">Categoria</label>
+                                        <select class="form-control  " id="categoria" required>
+                                            <option value="">Selecione</option>
+                                            <option>Suporte Individual</option>
+                                            <option>Palestra</option>
+                                            <option>Suporte técnico</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Favor preencher o campo Categoria!
+                                        </div>
+                                    </div>
 
-                        <div class="container">
-                            <h1>Bem Vindo, Daniel!</h1>
+                                </div>
+
+                                <button class="btn btn-primary" type="button"
+                                    onclick="cadastrar_form()">Cadastrar</button>
+                            </form>
+
+                        </section>
+
+
+
+
+
+                        <div vw class="enabled">
+                            <div vw-access-button class="active"></div>
+                            <div vw-plugin-wrapper>
+                                <div class="vw-plugin-top-wrapper"></div>
+                            </div>
                         </div>
 
-
-
-
-
-
-
-
-
-
-                    </section>
-
-
-
-
-
-                    <div vw class="enabled">
-                        <div vw-access-button class="active"></div>
-                        <div vw-plugin-wrapper>
-                            <div class="vw-plugin-top-wrapper"></div>
-                        </div>
                     </div>
 
                     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>

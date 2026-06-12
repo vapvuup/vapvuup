@@ -1,0 +1,638 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    color: #1d2939;
+    background:
+        radial-gradient(circle at top left, rgba(105, 210, 188, .25), transparent 34%),
+        linear-gradient(180deg, #f7fffd, #f6f8fb 48%, #fff);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(rgba(23, 155, 134, .13) 1px, transparent 1px) 0 0 / 28px 28px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .55), transparent 65%);
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    color: #667085;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+}
+
+.main-content {
+    padding-top: 86px;
+}
+
+/* =========================================================
+   NAVBAR - Bootstrap + ajustes visuais do projeto
+========================================================= */
+.navbar {
+    min-height: 74px;
+    background: rgba(255, 255, 255, .86) !important;
+    border-color: rgba(23, 155, 134, .12) !important;
+    box-shadow: 0 10px 32px rgba(31, 54, 61, .07) !important;
+    backdrop-filter: blur(14px);
+}
+
+.navbar-brand {
+    color: #23364f !important;
+    letter-spacing: -.02em;
+}
+
+.brand-logo,
+.footer-logo {
+    object-fit: contain;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.brand-logo {
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 8px 24px rgba(23, 155, 134, .18);
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
+/* =========================================================
+   BOTÕES / ELEMENTOS BASE
+========================================================= */
+
+.btn-outline-primary {
+    color: #179b86;
+    border-color: rgba(23, 155, 134, .28);
+    background: #fff;
+}
+
+.btn-light-green {
+    color: #179b86;
+    background: #e9fbf7;
+    border: 1px solid rgba(23, 155, 134, .14);
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    padding: 8px 14px;
+    color: #179b86;
+    background: rgba(105, 210, 188, .18);
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.section-padding {
+    padding: 82px 0;
+}
+
+.section-title,
+.page-title,
+.cta-box h2,
+.split-content h2,
+.contact-side h2,
+.hero-title,
+.sobre-box h2,
+.sobre-box h3,
+.page-hero-card h2 {
+    color: #23364f;
+    font-weight: 950;
+    letter-spacing: -.04em;
+}
+
+.section-title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.section-subtitle {
+    max-width: 730px;
+    margin: 0 auto 46px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* =========================================================
+   HOME
+========================================================= */
+.hero-section {
+    position: relative;
+    padding: 58px 0 70px;
+}
+
+.hero-section::after,
+.page-hero-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(23, 155, 134, .12);
+}
+
+.hero-section::after {
+    top: 70px;
+    right: -120px;
+    z-index: -1;
+    width: 320px;
+    height: 320px;
+    background: rgba(105, 210, 188, .20);
+    filter: blur(10px);
+    display: none;
+}
+
+.hero-title {
+    max-width: 690px;
+    font-size: clamp(2.45rem, 5vw, 5rem);
+    line-height: .98;
+    letter-spacing: -.06em;
+}
+
+.hero-title span {
+    color: #179b86;
+}
+
+.hero-subtitle {
+    max-width: 590px;
+    margin: 22px 0 30px;
+    font-size: 1.18rem;
+}
+
+.hero-visual {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 520px;
+}
+
+.hero-blob {
+    position: absolute;
+    inset: 40px 20px 20px;
+    border-radius: 46% 54% 49% 51% / 44% 48% 52% 56%;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, .75), rgba(233, 251, 247, .72)),
+        radial-gradient(circle at 70% 18%, rgba(105, 210, 188, .55), transparent 31%);
+    border: 1px solid rgba(23, 155, 134, .16);
+    box-shadow: 0 20px 60px rgba(24, 62, 70, .10);
+}
+
+.hero-mascot {
+    position: relative;
+    z-index: 2;
+    width: min(420px, 88%);
+    filter: drop-shadow(0 26px 35px rgba(24, 62, 70, .18));
+}
+
+.float-card {
+    position: absolute;
+    z-index: 3;
+    max-width: 230px;
+    padding: 16px 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, .92);
+    border: 1px solid rgba(23, 155, 134, .13);
+    box-shadow: 0 12px 32px rgba(24, 62, 70, .08);
+    backdrop-filter: blur(12px);
+}
+
+.float-card strong {
+    display: block;
+    color: #23364f;
+    font-size: 1rem;
+}
+
+.float-card span {
+    color: #667085;
+    font-size: .88rem;
+}
+
+.float-card.card-one {
+    top: 65px;
+    left: 0;
+}
+
+.float-card.card-two {
+    right: 0;
+    bottom: 66px;
+}
+
+/* =========================================================
+   CARDS - estrutura Bootstrap, visual preservado
+========================================================= */
+.v-card,
+.page-hero-card,
+.contact-side {
+    height: 100%;
+    background: rgba(255, 255, 255, .9);
+    border: 1px solid rgba(23, 155, 134, .14) !important;
+    border-radius: 28px;
+    box-shadow: 0 12px 32px rgba(24, 62, 70, .08) !important;
+}
+
+.v-card {
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.v-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(23, 155, 134, .32) !important;
+    box-shadow: 0 20px 60px rgba(24, 62, 70, .10) !important;
+}
+
+.card-plano,
+.form-card,
+.sobre-box {
+    background: rgba(255, 255, 255, .94);
+}
+
+.card-plano:hover,
+.form-card:hover,
+.sobre-box:hover {
+    transform: none;
+}
+
+.icon-box {
+    display: inline-grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 18px;
+    color: #179b86;
+    background: linear-gradient(135deg, #e9fbf7, #fff);
+    border: 1px solid rgba(23, 155, 134, .14);
+    border-radius: 20px;
+    font-size: 1.65rem;
+}
+
+:is(.service-card h3, .beneficio-card h4, .value-card h3, .impact-card h5, .step-card h4, .contact-card h5) {
+    color: #23364f;
+    font-weight: 900;
+    letter-spacing: -.02em;
+}
+
+:is(.value-card ul, .sobre-box ul) {
+    padding-left: 20px;
+    color: #667085;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   PÁGINAS INTERNAS
+========================================================= */
+.page-hero {
+    padding: 70px 0 42px;
+}
+
+.page-hero-card {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at right top, rgba(105, 210, 188, .42), transparent 32%),
+        linear-gradient(135deg, #fff, #effffb);
+    border-radius: 38px;
+}
+
+.page-hero-card::after {
+    right: -70px;
+    bottom: -90px;
+    width: 240px;
+    height: 240px;
+}
+
+.page-title,
+.page-description,
+.page-hero-card>* {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+}
+
+.page-title {
+    margin-bottom: 14px;
+    font-size: clamp(2.25rem, 5vw, 4.4rem);
+    line-height: .98;
+    letter-spacing: -.06em;
+}
+
+.page-description {
+    max-width: 720px;
+    margin-bottom: 0;
+    font-size: 1.12rem;
+}
+
+.swot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.swot-item {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid rgba(23, 155, 134, .14);
+    border-radius: 22px;
+}
+
+.swot-item strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #179b86;
+    font-size: 1.05rem;
+}
+
+/* =========================================================
+   DOAÇÕES / FORMULÁRIOS
+========================================================= */
+.planos,
+.form-section {
+    padding: 34px 0 82px;
+}
+
+.card-plano {
+    overflow: hidden;
+}
+
+.donation-panel {
+    padding: 26px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, #f2fffb, #fff);
+    border: 1px solid rgba(23, 155, 134, .14);
+}
+
+.donation-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 24px 0;
+    padding: 18px 20px;
+    color: #fff;
+    background: #23364f;
+    border-radius: 22px;
+}
+
+.donation-total span {
+    color: rgba(255, 255, 255, .75);
+    font-weight: 700;
+}
+
+.donation-total strong {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    line-height: 1;
+}
+
+:is(.form-control, .form-select, .input-group-text) {
+    min-height: 52px;
+    border-color: rgba(23, 155, 134, .18);
+    border-radius: 16px;
+}
+
+.input-group> :is(.form-control, .input-group-text) {
+    border-radius: 16px;
+}
+
+:is(.form-control, .form-select):focus {
+    border-color: #69d2bc;
+    box-shadow: 0 0 0 .22rem rgba(105, 210, 188, .18);
+}
+
+textarea.form-control {
+    min-height: 150px;
+}
+
+/* =========================================================
+   CONTATO
+========================================================= */
+.contact-side {
+    position: relative;
+    overflow: hidden;
+    color: #050404;
+    background: #94e7d5;
+}
+
+.contact-side :is(p, a) {
+    color: rgba(0, 0, 0, .88);
+}
+
+.contact-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.contact-mini {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .14) !important;
+    backdrop-filter: blur(10px);
+}
+
+.contact-mini strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* =========================================================
+   FOOTER / WHATSAPP
+========================================================= */
+.footer {
+    background: #ffffff !important;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    color: rgba(255, 255, 255, .76);
+}
+
+.footer a:hover {
+    color: #69d2bc !important;
+}
+
+.footer-logo {
+    width: 42px;
+    height: 42px;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    width: 62px;
+    height: 62px;
+    color: #fff;
+    background: linear-gradient(135deg, #25d366, #16a75d);
+    border-radius: 50%;
+    font-size: 1.65rem;
+    text-decoration: none;
+    box-shadow: 0 16px 34px rgba(37, 211, 102, .34);
+    transition: transform .18s ease;
+}
+
+.whatsapp-btn:hover {
+    color: #fff;
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 14px 0 6px;
+    }
+
+    .navbar .nav-link {
+        margin: 4px 0;
+    }
+
+    .hero-section {
+        padding-top: 34px;
+    }
+
+    .hero-visual {
+        min-height: 420px;
+        margin-top: 30px;
+    }
+
+    .float-card.card-one {
+        left: 12px;
+    }
+
+    .float-card.card-two {
+        right: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content {
+        padding-top: 76px;
+    }
+
+    .brand-text small {
+        display: none;
+    }
+
+    .hero-title,
+    .page-title {
+        letter-spacing: -.045em;
+    }
+
+    .hero-visual {
+        min-height: 330px;
+    }
+
+    .hero-blob {
+        inset: 26px 12px;
+    }
+
+    .float-card {
+        position: relative;
+        inset: auto !important;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .section-padding,
+    .planos,
+    .form-section {
+        padding: 54px 0;
+    }
+
+    .swot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .donation-total {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .whatsapp-btn {
+        right: 14px;
+        bottom: 14px;
+        width: 66px;
+        height: 66px;
+    }
+
+    .menu_letra {
+        font-size: 10px;
+    }
+
+
+
+    /* Login */
+    .bg-image-vertical {
+        position: relative;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+        background: #94e7d5;
+    }
+
+    @media (min-width: 1025px) {
+        .h-custom-2 {
+            height: 100%;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}

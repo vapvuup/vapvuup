@@ -1,6 +1,6 @@
 
 
-const atendimentos = [
+let atendimentos = [
     {
         id: 1,
         servico: "Uso Básico do Celular",
@@ -102,3 +102,99 @@ window.exportarPDF = function () {
 
     doc.save('atendimentos.pdf');
 };
+
+
+
+function cadastrar_form() {
+
+
+    let atendente = $('#atendente').val();
+    let Atendido = $('#Atendido').val();
+    let servico_executado = $('#servico_executado').val();
+    let Duracao = $('#Duracao').val();
+    let categoria = $('#categoria').val();
+
+    if (atendente == '') {
+        $('#atendente').removeClass('is-valid')
+        $('#atendente').addClass('is-invalid')
+    } else {
+        $('#atendente').removeClass('is-invalid')
+        $('#atendente').addClass('is-valid')
+    }
+
+
+    if (Atendido == '') {
+        $('#Atendido').removeClass('is-valid')
+        $('#Atendido').addClass('is-invalid')
+    } else {
+        $('#Atendido').removeClass('is-invalid')
+        $('#Atendido').addClass('is-valid')
+    }
+
+
+    if (servico_executado == '') {
+        $('#servico_executado').removeClass('is-valid')
+        $('#servico_executado').addClass('is-invalid')
+    } else {
+        $('#servico_executado').removeClass('is-invalid')
+        $('#servico_executado').addClass('is-valid')
+    }
+
+    if (Duracao == '') {
+        $('#Duracao').removeClass('is-valid')
+        $('#Duracao').addClass('is-invalid')
+    } else {
+        $('#Duracao').removeClass('is-invalid')
+        $('#Duracao').addClass('is-valid')
+    }
+
+    if (categoria == '') {
+        $('#categoria').removeClass('is-valid')
+        $('#categoria').addClass('is-invalid')
+    } else {
+        $('#categoria').removeClass('is-invalid')
+        $('#categoria').addClass('is-valid')
+    }
+
+
+    atendimentos.push({
+        servico,
+        categoria,
+        duracao,
+        atendente,
+        atendido
+    });
+
+
+    function abrir_login() {
+        // Captura o elemento input pelo ID
+        const meuLogin = document.getElementById('login');
+
+        // Pega o valor contido nele
+        const login = meuLogin.value;
+
+
+        // Captura o elemento input pelo ID
+        const minhasenha = document.getElementById('senha');
+
+        // Pega o valor contido nele
+        const senha = minhasenha.value;
+
+
+
+
+        if (login == 'Daniel' && senha == '123') {
+            window.location.href = "home.html";
+        } else {
+
+
+            Swal.fire({
+                title: 'Atenção!',
+                text: 'Favor incluir um login e senha válidos!',
+                icon: 'info',
+                confirmButtonText: 'Cool'
+            })
+
+        }
+    }
+}
